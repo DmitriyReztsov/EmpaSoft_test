@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.get_users),
-    path('<int:pid>/', views.get_users_details),
+    path('<int:pid>/', views.get_users_details),  # pid = personal id
 ]
