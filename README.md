@@ -77,6 +77,6 @@ flake8 users/
 ```
 
 
-# Author
+# Автор
 
 Dmitriy Reztsov
