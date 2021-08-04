@@ -2,13 +2,13 @@
 Реализация SCUD API приложения Users тестового проекта EmphaSoft.
 
 
-## Использованные языки и фреймворки:
-- [Python] 3.8.8
-- [Django] 2.2.19
+# Использованные языки и фреймворки:
+- [Python](https://www.python.org/) 3.8.8
+- [Django](https://www.djangoproject.com/) 2.2.19
 - [Django Rest Framework](https://www.django-rest-framework.org/) 3.12.4
 
 
-## Приступая к работе
+# Приступая к работе
 
 - Клонируйте репозиторий:
 ```
@@ -42,7 +42,7 @@ python manage.py runserver
 ```
 
 
-## Endpoints
+# Endpoints
 
 Доступные эндпойнты будут доступны по адресу http://127.0.0.1:8000/swagger/
 
@@ -56,7 +56,7 @@ python manage.py runserver
 | /api/v1/users/{id}/ | PUT, PATCH | внесение изменения (полного или частичного соответственно) в информацию о пользователе {id} |
 | /api/v1/users/{id}/ | DELETE | пользователю {id} устанавливается значение is_active=False |
 
-# Тестирование эндпойнтов
+## Тестирование эндпойнтов
 
 Возможно тестирование из браузера по адресу: http://127.0.0.1:8000/swagger/
 1. выполните запрос, указав в теле запроса username и password
@@ -64,7 +64,7 @@ python manage.py runserver
 3. нажмите кнопку Authorize и внесите полученный токен: "Token <полученный токен>"
 
 
-## Линтер
+# Линтер
 
 - flake8
 
@@ -74,6 +74,7 @@ flake8 scud_user/
 flake8 users/
 ```
 
-## Author
+
+# Author
 
 Dmitriy Reztsov
