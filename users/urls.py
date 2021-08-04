@@ -1,8 +1,11 @@
-from django.urls import path
+from django.urls import include, path
+from rest_framework.routers import DefaultRouter
 
-from . import views
+from .views import UserViewSet
+
+v1_router = DefaultRouter()
+v1_router.register('users', UserViewSet, 'users')
 
 urlpatterns = [
-    path('', views.get_users),
-    path('<int:pid>/', views.get_users_details),  # pid = personal id
+    path('v1/', include(v1_router.urls)),
 ]
